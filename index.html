@@ -1,321 +1,328 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <title>PlugAnimate</title>
-  <link rel="icon" type="image/png" href="static/images/planet.png">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
-  <style>
-    .prompt {
-      font-family: 'Arial', sans-serif; /* 选择一个适合您网站的字体 */
-      font-size: 18px; /* 适当的字体大小 */
-      font-weight: bold; /* 加粗字体 */
-      color: #3273dc; /* 使用您的主题颜色或任何醒目的颜色 */
-      background-color: #f0f0f0; /* 轻微的背景色可以帮助文本突出显示 */
-      padding: 10px; /* 在文本周围添加一些内边距 */
-      border-radius: 5px; /* 可选的，为标签添加圆角 */
-      margin-top: 10px; /* 在图片和文本之间添加一些间距 */
-      display: inline-block; /* 使得背景色紧贴文本 */
-    }
-    .no-wrap {
-      white-space: nowrap; /* 阻止文本换行 */
-      font-style: italic;
-    }
-  </style>
-
-</head>
-<body>
-
-
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title" style="white-space: nowrap;">PlugAnimate: an Image-to-Video Diffusion Model</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution<br>Conference</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3 no-wrap">Stay Tuned for us</h2>
-        <div class="content has-text-justified">
-          <p>
-            <!-- A cool image animation work, stay tuned for us! -->
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-
-<!-- Showcase Section -->
-<section class="section">
-  <div class="container is-max-desktop content">
-    <h2 class="title">Showcase</h2>
-
-    <!-- Case 1 -->
-    <div class="columns">
-      <div class="column">
-        <h3>Input Image and Prompt</h3>
-        <!-- Replace with actual image and prompt for Case 1 -->
-        <img src="static/cases/ali_1.png" alt="Input Image for Case 1">
-        <p class="prompt">Prompt: A beautiful 3D girl.</p>
-      </div>
-      <div class="column">
-        <h3>Comparison Model</h3>
-        <!-- Replace with actual comparison model output GIF for Case 1 -->
-        <img src="static/cases/ali_1_raw.gif" alt="Comparison Model Output for Case 1">
-      </div>
-      <div class="column">
-        <h3>Our Model</h3>
-        <!-- Replace with actual model output GIF for Case 1 -->
-        <img src="static/cases/ali_1.gif" alt="My Model Output for Case 1">
-      </div>
-    </div>
-
-    <!-- Case 2 -->
-    <div class="columns">
-      <div class="column">
-        <h3>Input Image and Prompt</h3>
-        <!-- Replace with actual image and prompt for Case 2 -->
-        <img src="static/cases/ali_4.png" alt="Input Image for Case 2">
-        <p class="prompt">Prompt: At night, a person sits in front of a computer, facing the road with a gray and yellow light.</p>
-      </div>
-      <div class="column">
-        <h3>Comparison Model</h3>
-        <!-- Replace with actual comparison model output GIF for Case 2 -->
-        <img src="static/cases/ali_4_raw.gif" alt="Comparison Model Output for Case 2">
-      </div>
-      <div class="column">
-        <h3>Our Model</h3>
-        <!-- Replace with actual model output GIF for Case 2 -->
-        <img src="static/cases/ali_4.gif" alt="My Model Output for Case 2">
-      </div>
-    </div>
-
-    <!-- Case 3 -->
-    <div class="columns">
-      <div class="column">
-        <h3>Input Image and Prompt</h3>
-        <!-- Replace with actual image and prompt for Case 3 -->
-        <img src="static/cases/ali_3.png" alt="Input Image for Case 3">
-        <p class="prompt">Prompt: A kitten in flowers, Chinese painting.</p>
-      </div>
-      <div class="column">
-        <h3>Comparison Model</h3>
-        <!-- Replace with actual comparison model output GIF for Case 3 -->
-        <img src="static/cases/ali_3_raw.gif" alt="Comparison Model Output for Case 3">
-      </div>
-      <div class="column">
-        <h3>Our Model</h3>
-        <!-- Replace with actual model output GIF for Case 3 -->
-        <img src="static/cases/ali_3.gif" alt="My Model Output for Case 3">
-      </div>
-    </div>
-
-    <!-- Case 4 -->
-    <div class="columns">
-      <div class="column">
-        <h3>Input Image and Prompt</h3>
-        <!-- Replace with actual image and prompt for Case 4 -->
-        <img src="static/cases/bytedance_1.png" alt="Input Image for Case 4">
-        <p class="prompt">Prompt: Batman and ironman are dancing.</p>
-      </div>
-      <div class="column">
-        <h3>Comparison Model</h3>
-        <!-- Replace with actual comparison model output GIF for Case 4 -->
-        <img src="static/cases/bytedance_1_raw.gif" alt="Comparison Model Output for Case 4">
-      </div>
-      <div class="column">
-        <h3>Our Model</h3>
-        <!-- Replace with actual model output GIF for Case 4 -->
-        <img src="static/cases/bytedance_1.gif" alt="My Model Output for Case 4">
-      </div>
-    </div>
-
-    <!-- Case 5 -->
-    <div class="columns">
-      <div class="column">
-        <h3>Input Image and Prompt</h3>
-        <!-- Replace with actual image and prompt for Case 5 -->
-        <img src="static/cases/bytedance_2.png" alt="Input Image for Case 5">
-        <p class="prompt">Prompt: Mini batman surfing on the sea, batman dancing on the boarrd, waves.</p>
-      </div>
-      <div class="column">
-        <h3>Comparison Model</h3>
-        <!-- Replace with actual comparison model output GIF for Case 5 -->
-        <img src="static/cases/bytedance_2_raw.gif" alt="Comparison Model Output for Case 5">
-      </div>
-      <div class="column">
-        <h3>Our Model</h3>
-        <!-- Replace with actual model output GIF for Case 5 -->
-        <img src="static/cases/bytedance_2.gif" alt="My Model Output for Case 5">
-      </div>
-    </div>
-
-    <!-- Case 6 -->
-    <div class="columns">
-      <div class="column">
-        <h3>Input Image and Prompt</h3>
-        <!-- Replace with actual image and prompt for Case 6 -->
-        <img src="static/cases/bytedance_3.png" alt="Input Image for Case 6">
-        <p class="prompt">Prompt: Coloful powder exploding.</p>
-      </div>
-      <div class="column">
-        <h3>Comparison Model</h3>
-        <!-- Replace with actual comparison model output GIF for Case 6 -->
-        <img src="static/cases/bytedance_3_raw.gif" alt="Comparison Model Output for Case 6">
-      </div>
-      <div class="column">
-        <h3>Our Model</h3>
-        <!-- Replace with actual model output GIF for Case 6 -->
-        <img src="static/cases/bytedance_3.gif" alt="My Model Output for Case 6">
-      </div>
-    </div>
-
-    <!-- 更多案例可以继续按照上面的格式添加 -->
-
-  </div>
-</section>
-<!-- End Showcase Section -->
-
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
+  <title>I2V-Adapter</title>
+  <link href="./files/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" rel="stylesheet"/>
+    <script defer src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
   
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+  <body>
+  <div class="content">
+    <h1><strong>I2V-Adapter: A General Image-to-Video Adapter for Video Diffusion Models</strong></h1>
+    <p id="authors"><span><a >Xun Guo</a> <sup>1 2 3 † </sup> <a >Mingwu Zheng</a><sup>1 † </sup> <a >Liang Hou</a><sup>1</sup> <a >Yuan Gao</a><sup>1</sup> <a >Yufan Deng</a><sup>1</sup> <a >Chongyang Ma</a><sup>1</sup><br>
+      <a >Weiming Hu</a><sup>3</sup> <a >Zhengjun Zha</a><sup>2</sup> <a >Haibin Huang</a><sup>1 *</sup> <a >Pengfei Wan</a><sup>1</sup> <a >Di Zhang</a><sup>1</sup><br> 
+      <br>
+    <span style="font-size: 18px"><sup>1</sup>Kuaishou Technology<br>
+      <sup>2</sup>University of Science and Technology of China<br>
+      <sup>3</sup>Institute of Automation, Chinese Academy of Sciences<br>
+      <span style="font-size: 15px">
+        <sup>†</sup> Equal contribution, 
+        <sup>*</sup> Corresponding author<br>
+      </span>
+    </span></p>
+    <br>
+    <div class="gallery">
+      <div class="row">
+      <figure style="width: 100%;margin: auto 0;">
+        <img src="./files/gifs/teaser1.gif">
+        <figcaption style="text-align: center;">I2V-Adapter</figcaption>
+      </figure>
+      <figure style="width: 100%;margin: auto 0;">
+        <img src="./files/gifs/21.gif">
+        <figcaption style="text-align: center;">W/ Personalized T2I</figcaption>
+      </figure>
+      <figure style="width: 100%;margin: auto 0;">
+        <img src="./files/gifs/teaser2.gif">
+        <figcaption style="text-align: center;">W/ ControlNet</figcaption>
+      </figure>
+      </div>
+    </div>
+    <!-- <img src="./files/imgs/teaser_1227_v2.png" class="teaser-gif" style="width:100%;"> -->
+    <br>
+      <font size="+2">
+            <p style="text-align: center;">
+              <a href="https://arxiv.org/abs/2312.16693" target="_blank">[Paper]</a> &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://github.com/YOUR REPO HERE" target="_blank">[Code]</a> &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="./files/bib.txt" target="_blank">[BibTeX]</a>
+            </p>
+      </font>
+  </div>
 
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+  <div class="content">
+    <h2 style="text-align:center"><strong>Abstract</strong></h2> 
+    <p>
+      In the rapidly evolving domain of digital content generation, the focus has shifted from text-to-image (T2I) models to more advanced video diffusion models, notably text-to-video (T2V) and image-to-video (I2V). This paper addresses the intricate challenge posed by I2V: converting static images into dynamic, lifelike video sequences while preserving the original image fidelity. Traditional methods typically involve integrating entire images into diffusion processes or using pretrained encoders for cross attention. However, these approaches often necessitate altering the fundamental weights of T2I models, thereby restricting their reusability. We introduce a novel solution, namely I2V-Adapter, designed to overcome such limitations. Our approach preserves the structural integrity of T2I models and their inherent motion modules. The I2V-Adapter operates by processing noised video frames in parallel with the input image, utilizing a lightweight adapter module. This module acts as a bridge, efficiently linking the input to the model's self-attention mechanism, thus maintaining spatial details without requiring structural changes to the T2I model. Moreover, I2V-Adapter requires only a fraction of the parameters of conventional models and ensures compatibility with existing community-driven T2I models and controlling tools. Our experimental results demonstrate I2V-Adapter's capability to produce high-quality video outputs. This performance, coupled with its versatility and reduced need for trainable parameters, represents a substantial advancement in the field of AI-driven video generation, particularly for creative applications.
+    </p>
+  </div>
+  <div class="content">
+    <h2 style="text-align:center"><strong>Method</strong></h2>
+    <p>
+      Given a reference image and a text prompt, our goal is to generate a video sequence starting with the provided image. This task is particularly challenging as it requires ensuring consistency with the first frame, compatibility with the prompt, and preserving the coherence of the video sequence throughout. We introduce I2V-Adapter, a plug-and-play module to transfer a T2V diffusion model into an I2V diffusion model.
+      The core design of I2V-Adapter is a decoupled attention mechanism to parallelly process the input image and the noised images. We zero-initialize the output layer of I2V-Adapter to ensure that the model starts as if no modifications have been made. We also leverage a content adapter to provide high-level semantic information to enhance the condition.<br><br>
+      To stablize the generation process, we also propose an additional frame similarity prior. Our key assumption is that, on a relatively low Gaussian noise level, the marginal distributions of the
+      noised first frame and the the noised subsequent frames are adequately close. At a high level, we assume that in most short video clips, all frames are structurally similar and become indistinguishable after being corrupted with a certain amount of Gaussian noise.
+    </p>
+    <br>
+    <img class="summary-img" src="./files/imgs/pipe.png" style="width:90%;"> <br>
+  </div>
+  <div class="content">
+    <h2 style="text-align: center;"><strong>Gallery</strong></h2>
+    <h3>Image Animation</h3>
+    <div class="gallery">
+      <div class="row">
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/input_imgs/13.jpg">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/gifs/13.gif">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/input_imgs/17.jpg">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 100%; margin: auto 0;">
+          <img src="./files/gifs/17.gif">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+      </div>
+      <div class="row">
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/input_imgs/5.jpg">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/gifs/5.gif">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/input_imgs/14.jpg">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 100%; margin: auto 0;">
+          <img src="./files/gifs/14.gif">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+      </div>
+      <div class="row">
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/input_imgs/4.jpg">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/gifs/4.gif">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/input_imgs/10.jpg">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 100%; margin: auto 0;">
+          <img src="./files/gifs/10.gif">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+      </div>
+      <div class="row">
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/input_imgs/3.jpg">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/gifs/3.gif">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/input_imgs/6.jpg">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 100%; margin: auto 0;">
+          <img src="./files/gifs/6.gif">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+      </div>
+      <div class="row">
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/input_imgs/7.jpg">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/gifs/7.gif">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/input_imgs/1.jpg">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 100%; margin: auto 0;">
+          <img src="./files/gifs/1.gif">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+      </div>
+      <div class="row">
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/input_imgs/9.jpg">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/gifs/9.gif">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/input_imgs/8.jpg">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 100%; margin: auto 0;">
+          <img src="./files/gifs/8.gif">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+      </div>
+      <div class="row">
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/input_imgs/15.jpg">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/gifs/15.gif">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/input_imgs/18.jpg">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 100%; margin: auto 0;">
+          <img src="./files/gifs/18.gif">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+      </div>
+      <h3><strong>With Personalized T2I models</strong></h3>
+      <div class="row">
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/input_imgs/20.jpg">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/gifs/20.gif">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/input_imgs/22.jpg">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 100%; margin: auto 0;">
+          <img src="./files/gifs/22.gif">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+      </div>
+      <div class="row">
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/input_imgs/24.jpg">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/gifs/24.gif">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+        <figure style="width: 100%;margin: auto 0;">
+          <img src="./files/input_imgs/25.jpg">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 100%; margin: auto 0;">
+          <img src="./files/gifs/25.gif">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+      </div>
+      <h3><strong>With ControlNet</strong></h3>
+      <div class="row">
+        <figure style="width: 25%;margin: auto 0;">
+          <img src="./files/input_imgs/c3.jpg" style="width:100%;">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 25%;margin: auto 0;">
+          <img src="./files/gifs/c3_pose.gif" style="width:100%;">
+          <figcaption style="text-align: center;">Pose Sequence</figcaption>
+        </figure>
+        <figure style="width: 25%;margin: auto 0;">
+          <img src="./files/gifs/c3.gif" style="width:100%;">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+      </div>
+      <div class="row">
+        <figure style="width: 25%;margin: auto 0;">
+          <img src="./files/input_imgs/c1.jpg">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 25%;margin: auto 0;">
+          <img src="./files/gifs/c1_pose.gif">
+          <figcaption style="text-align: center;">Pose Sequence</figcaption>
+        </figure>
+        <figure style="width: 25%;margin: auto 0;">
+          <img src="./files/gifs/c1.gif">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+      </div>    
+      <div class="row">
+        <figure style="width: 25%;margin: auto 0;">
+          <img src="./files/input_imgs/c2.jpg">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 25%;margin: auto 0;">
+          <img src="./files/gifs/c2_pose.gif">
+          <figcaption style="text-align: center;">Pose Sequence</figcaption>
+        </figure>
+        <figure style="width: 25%;margin: auto 0;">
+          <img src="./files/gifs/c2.gif">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+      </div>
+      <div class="row">
+        <figure style="width: 25%;margin: auto 0;">
+          <img src="./files/input_imgs/c4.jpg">
+          <figcaption style="text-align: center;">Input Image</figcaption>
+        </figure>
+        <figure style="width: 25%;margin: auto 0;">
+          <img src="./files/gifs/c4_pose.gif">
+          <figcaption style="text-align: center;">Pose Sequence</figcaption>
+        </figure>
+        <figure style="width: 25%;margin: auto 0;">
+          <img src="./files/gifs/c4.gif">
+          <figcaption style="text-align: center;">&nbsp;</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <h2 style="text-align:center; margin: 0 auto;"><strong>BibTex</strong></h2>
+    <code>@misc{guo2023i2vadapter,<br>
+      &nbsp;&nbsp;title={I2V-Adapter: A General Image-to-Video Adapter for Video Diffusion Models},<br>
+      &nbsp;&nbsp;author={Xun Guo and Mingwu Zheng and Liang Hou and Yuan Gao and Yufan Deng and Chongyang Ma and Weiming Hu<br> 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and Zhengjun Zha and Haibin Huang and Pengfei Wan and Di Zhang},<br>
+      &nbsp;&nbsp;year={2023},<br>
+      &nbsp;&nbsp;eprint={2312.16693},<br>
+      &nbsp;&nbsp;archivePrefix={arXiv},<br>
+      &nbsp;&nbsp;primaryClass={cs.CV}<br>
+}
+     </code>
+  </div>
+  <div class="content">
+    <p class="serif">
+      Project page template is borrowed from <a href="https://dreambooth.github.io/">DreamBooth</a>.
+    </p>
+  </div>
+    <script>
+      var gifImage = document.getElementById('gif-image');
+  
+      gifImage.addEventListener('click', function() {
+        if (gifImage.classList.contains('playing')) {
+          gifImage.classList.remove('playing');
+          gifImage.src = gifImage.src;
+        } else {
+          gifImage.classList.add('playing');
+          gifImage.src = gifImage.src;
+        }
+      });
+    </script>
+  </body></html>
+  
